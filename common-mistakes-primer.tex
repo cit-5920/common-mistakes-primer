@@ -4,12 +4,19 @@
 \usepackage{amssymb}
 \usepackage{geometry}
 \usepackage{xcolor}
+\usepackage{enumitem}
+
 \geometry{a4paper}
 
 % No paragraph indentation
 \setlength{\parindent}{0pt}
 % 1 line spacing between paragraphs
 \setlength{\parskip}{0.5\baselineskip}
+
+% New environments for consistent formatting
+\newenvironment{correct}{\noindent\textbf{Correct:}}{}
+\newenvironment{misconception}{\noindent\textbf{Correcting a Misconception:}}{}
+\newenvironment{explanation}{\noindent\textit{Explanation}:}{\vspace{1em}}
 
 \title{Common Mistakes Primer}
 \author{Jérémie Lumbroso}
@@ -19,173 +26,106 @@
 \maketitle
 
 \section*{Implicit Multiplication}
-
 When two numbers or variables are placed side by side, they are being multiplied.
-
-\textbf{Correct:} \(4x = 4 \times x\)
-
-\textbf{Correcting a Misconception:} \(4x\) does NOT mean \(4 + x\).
-
-\textit{Explanation}: Placing numbers or variables next to each other implies multiplication, not addition.
+\begin{correct} \(4x = 4 \times x\) \end{correct}
+\begin{misconception} \(4x\) does NOT mean \(4 + x\). \end{misconception}
+\begin{explanation} Placing numbers or variables next to each other implies multiplication, not addition. \end{explanation}
 
 \section*{Powers and Exponents}
-
 When a number or variable is raised to a power, it means that the base is multiplied by itself the number of times indicated by the exponent.
-
-\textbf{Correct:} \(x \times x \times x = x^3\)
-
-\textbf{Correcting a Misconception:} \(x \times x \times x\) does NOT equal \(3x\).
-
-\textit{Explanation}: Raising a number or variable to a power indicates repeated multiplication, not multiplication by the exponent.
+\begin{correct} \(x \times x \times x = x^3\) \end{correct}
+\begin{misconception} \(x \times x \times x\) does NOT equal \(3x\). \end{misconception}
+\begin{explanation} Raising a number or variable to a power indicates repeated multiplication, not multiplication by the exponent. \end{explanation}
 
 \section*{Order of Operations (PEMDAS/BODMAS)}
-
 Operations should be performed in a specific order: Parentheses/Brackets, Exponents/Orders, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).
-
-\textbf{Correct:} \(4 + 3 \times 2 = 10\)
-
-\textbf{Correcting a Misconception:} \(4 + 3 \times 2\) does NOT equal \(14\).
-
-\textit{Explanation}: Multiplication and division have higher precedence than addition and subtraction.
+\begin{correct} \(4 + 3 \times 2 = 10\) \end{correct}
+\begin{misconception} \(4 + 3 \times 2\) does NOT equal \(14\). \end{misconception}
+\begin{explanation} Multiplication and division have higher precedence than addition and subtraction. \end{explanation}
 
 \section*{Division}
-
 Division is an operation where one number is divided by another.
-
-\textbf{Correct:} \(\frac{a}{b}\), \(a \div b\), or \(a/b\)
-
-\textbf{Correcting a Misconception:} \(a|b\) does NOT mean \(a\) divided by \(b\).
-
-\textit{Explanation}: The symbol "|" is not a standard representation for division in mathematics.
+\begin{correct} \(\frac{a}{b}\), \(a \div b\), or \(a/b\) \end{correct}
+\begin{misconception} \(a|b\) does NOT mean \(a\) divided by \(b\). \end{misconception}
+\begin{explanation} The symbol "|" is not a standard representation for division in mathematics. \end{explanation}
 
 \section*{Equality}
-
 The equals sign (=) signifies that two expressions have the same value.
-
-\textbf{Correct:} If \(a = b\), then \(a\) can replace \(b\) in any equation.
-
-\textbf{Correcting a Misconception:} \(a = b\) does NOT mean \(a\) is similar to \(b\) without being the same.
-
-\textit{Explanation}: Equality means exact sameness, not just similarity.
+\begin{correct} If \(a = b\), then \(a\) can replace \(b\) in any equation. \end{correct}
+\begin{misconception} \(a = b\) does NOT mean \(a\) is similar to \(b\) without being the same. \end{misconception}
+\begin{explanation} Equality means exact sameness, not just similarity. \end{explanation}
 
 \section*{Dot for Multiplication}
-
 The dot symbol can be used to indicate multiplication, especially when using "x" might cause confusion.
-
-\textbf{Correct:} \(a \times b = a \cdot b\)
-
-\textbf{Correcting a Misconception:} \(a \cdot b\) does NOT mean \(a\) point \(b\).
-
-\textit{Explanation}: The dot is just another symbol for multiplication and doesn't imply a point or dot product.
+\begin{correct} \(a \times b = a \cdot b\) \end{correct}
+\begin{misconception} \(a \cdot b\) does NOT mean \(a\) point \(b\). \end{misconception}
+\begin{explanation} The dot is just another symbol for multiplication and doesn't imply a point or dot product. \end{explanation}
 
 \section*{Variables}
-
 In algebra, variables are symbols used to represent unspecified numbers or values.
-
-\textbf{Correct:} In the equation \(x + 2 = 5\), \(x = 3\)
-
-\textbf{Correcting a Misconception:} \(x\) does NOT always represent an unknown value, even in contexts where its value has been defined.
-
-\textit{Explanation}: Variables can represent known or unknown values depending on the context.
+\begin{correct} In the equation \(x + 2 = 5\), \(x = 3\) \end{correct}
+\begin{misconception} \(x\) does NOT always represent an unknown value, even in contexts where its value has been defined. \end{misconception}
+\begin{explanation} Variables can represent known or unknown values depending on the context. \end{explanation}
 
 \section*{Coefficient}
-
 In algebra, the coefficient is the numerical or constant part of a term.
-
-\textbf{Correct:} In \(7y\), 7 is the coefficient of \(y\).
-
-\textbf{Correcting a Misconception:} In \(7y\), \(y\) is NOT the coefficient.
-
-\textit{Explanation}: The coefficient is the number multiplying the variable, not the variable itself.
+\begin{correct} In \(7y\), 7 is the coefficient of \(y\). \end{correct}
+\begin{misconception} In \(7y\), \(y\) is NOT the coefficient. \end{misconception}
+\begin{explanation} The coefficient is the number multiplying the variable, not the variable itself. \end{explanation}
 
 \section*{Square Roots}
-
 The square root of a number is a value that, when multiplied by itself, gives the original number.
-
-\textbf{Correct:} \(\sqrt{9} = 3\) because \(3 \times 3 = 9\)
-
-\textbf{Correcting a Misconception:} \(\sqrt{a + b}\) does NOT mean \(\sqrt{a} + \sqrt{b}\).
-
-\textit{Explanation}: The square root of a sum is not necessarily the sum of the square roots.
+\begin{correct} \(\sqrt{9} = 3\) because \(3 \times 3 = 9\) \end{correct}
+\begin{misconception} \(\sqrt{a + b}\) does NOT mean \(\sqrt{a} + \sqrt{b}\). \end{misconception}
+\begin{explanation} The square root of a sum is not necessarily the sum of the square roots. \end{explanation}
 
 \section*{Terms and Factors}
-
 In algebra, terms are the parts of an expression separated by plus or minus signs. Factors are quantities that are multiplied together.
+\begin{correct} In \(3x + 4y\), \(3x\) and \(4y\) are terms. In \(3x\), 3 and \(x\) are factors. \end{correct}
+\begin{misconception} In \(3x + 4y\), 3, \(x\), 4, and \(y\) are NOT all terms. \end{misconception}
+\begin{explanation} Only the complete expressions separated by addition or subtraction are considered terms. \end{explanation}
 
-\textbf{Correct:} In \(3x + 4y\), \(3x\) and \(4y\) are terms. In \(3x\), 3 and \(x\) are factors.
-
-\textbf{Correcting a Misconception:} In \(3x + 4y\), 3, \(x\), 4, and \(y\) are NOT all terms.
-
-\textit{Explanation}: Only the complete expressions separated by addition or subtraction are considered terms.
 
 \section*{Quantifiers}
-
 In mathematical logic, quantifiers specify the quantity of specimens in the domain of discourse that satisfy an open formula.
-
-\textbf{Correct}: ``For all \(x\), there exists a \(y\) such that \(P(x,y)\)'' means that for every value of \(x\), we can find a corresponding \(y\) that satisfies \(P\).
-
-\textbf{Correcting a Misconception}: ``For all \(x\), there exists a \(y\) such that \(P(x,y)\)'' is NOT the same as ``There exists a \(y\) such that for all \(x\), \(P(x,y)\)''.
-
-\textit{Explanation}: The order of quantifiers matters. The first statement guarantees a possibly different \(y\) for each \(x\), while the second suggests a single \(y\) works for all \(x\).
+\begin{correct} ``For all \(x\), there exists a \(y\) such that \(P(x,y)\)'' means that for every value of \(x\), we can find a corresponding \(y\) that satisfies \(P\). \end{correct}
+\begin{misconception} ``For all \(x\), there exists a \(y\) such that \(P(x,y)\)'' is NOT the same as ``There exists a \(y\) such that for all \(x\), \(P(x,y)\)''. \end{misconception}
+\begin{explanation} The order of quantifiers matters. The first statement guarantees a possibly different \(y\) for each \(x\), while the second suggests a single \(y\) works for all \(x\). \end{explanation}
 
 \section*{Mathematical Induction}
-
 Mathematical induction is a method of mathematical proof typically used to establish a given statement for all natural numbers.
-
-\textbf{Correct}: When using mathematical induction, one must first prove the base case.
-
-\textbf{Correcting a Misconception}: It's NOT enough to prove the inductive step without verifying the base case.
-
-\textit{Explanation}: The base case serves as the foundation upon which the inductive step builds.
+\begin{correct} When using mathematical induction, one must first prove the base case. \end{correct}
+\begin{misconception} It's NOT enough to prove the inductive step without verifying the base case. \end{misconception}
+\begin{explanation} The base case serves as the foundation upon which the inductive step builds. \end{explanation}
 
 \section*{Sets and Their Equality}
-
 In set theory, two sets are considered equal if they contain the same elements.
-
-\textbf{Correct}: If \(A \subseteq B\) and \(B \subseteq A\), then \(A = B\).
-
-\textbf{Correcting a Misconception}: If \(A \subseteq B\) and \(B \subseteq A\), it does NOT mean that \(A\) and \(B\) are different sets containing the same elements.
-
-\textit{Explanation}: When two sets are subsets of each other, they are, in fact, the same set.
+\begin{correct} If \(A \subseteq B\) and \(B \subseteq A\), then \(A = B\). \end{correct}
+\begin{misconception} If \(A \subseteq B\) and \(B \subseteq A\), it does NOT mean that \(A\) and \(B\) are different sets containing the same elements. \end{misconception}
+\begin{explanation} When two sets are subsets of each other, they are, in fact, the same set. \end{explanation}
 
 \section*{Logical Implications}
-
 In logic, an implication is a type of statement which asserts that one statement (the antecedent) implies another (the consequent).
-
-\textbf{Correct}: The contrapositive of ``If \(P\) then \(Q\)'' is ``If not \(Q\) then not \(P\)'' and is logically equivalent to the original statement.
-
-\textbf{Correcting a Misconception}: The converse of ``If \(P\) then \(Q\)'' is NOT always true if ``If \(P\) then \(Q\)'' is true.
-
-\textit{Explanation}: The converse reverses the direction of the implication, which doesn't guarantee its truth.
+\begin{correct} The contrapositive of ``If \(P\) then \(Q\)'' is ``If not \(Q\) then not \(P\)'' and is logically equivalent to the original statement. \end{correct}
+\begin{misconception} The converse of ``If \(P\) then \(Q\)'' is NOT always true if ``If \(P\) then \(Q\)'' is true. \end{misconception}
+\begin{explanation} The converse reverses the direction of the implication, which doesn't guarantee its truth. \end{explanation}
 
 \section*{Functions}
-
 In mathematics, a function is a relation between a set of inputs and a set of possible outputs where each input is related to exactly one output.
-
-\textbf{Correct}: Not all functions have inverse functions. For a function to have an inverse, it must be bijective.
-
-\textbf{Correcting a Misconception}: If \(f: A \rightarrow B\) is a function, there does NOT necessarily exist a function \(g: B \rightarrow A\) such that \(g(f(x)) = x\) for all \(x\) in \(A\).
-
-\textit{Explanation}: Only bijective functions have inverses that can map back from the codomain to the domain.
+\begin{correct} Not all functions have inverse functions. For a function to have an inverse, it must be bijective. \end{correct}
+\begin{misconception} If \(f: A \rightarrow B\) is a function, there does NOT necessarily exist a function \(g: B \rightarrow A\) such that \(g(f(x)) = x\) for all \(x\) in \(A\). \end{misconception}
+\begin{explanation} Only bijective functions have inverses that can map back from the codomain to the domain. \end{explanation}
 
 \section*{Relations}
-
 In mathematics, a relation is a set of ordered pairs, typically denoting some relationship between the first and second elements of each pair.
-
-\textbf{Correct}: A relation can be reflexive, symmetric, or transitive independently of the other properties.
-
-\textbf{Correcting a Misconception}: If a relation is reflexive and symmetric, it is NOT necessarily transitive.
-
-\textit{Explanation}: Each property of a relation is defined independently, and having two doesn't guarantee the third.
+\begin{correct} A relation can be reflexive, symmetric, or transitive independently of the other properties. \end{correct}
+\begin{misconception} If a relation is reflexive and symmetric, it is NOT necessarily transitive. \end{misconception}
+\begin{explanation} Each property of a relation is defined independently, and having two doesn't guarantee the third. \end{explanation}
 
 \section*{Conditional Statements}
-
 Conditional statements, often called conditionals for short, are sentences that express cause-and-effect situations.
-
-\textbf{Correct}: The converse of ``If \(P\) then \(Q\)'' is ``If \(Q\) then \(P\)'', and it might not have the same truth value as the original statement.
-
-\textbf{Correcting a Misconception}: If ``If \(P\) then \(Q\)'' is true, ``If \(Q\) then \(P\)'' is NOT necessarily true.
-
-\textit{Explanation}: The direction of the implication is crucial, and reversing it can change its truth value.
+\begin{correct} The converse of ``If \(P\) then \(Q\)'' is ``If \(Q\) then \(P\)'', and it might not have the same truth value as the original statement. \end{correct}
+\begin{misconception} If ``If \(P\) then \(Q\)'' is true, ``If \(Q\) then \(P\)'' is NOT necessarily true. \end{misconception}
+\begin{explanation} The direction of the implication is crucial, and reversing it can change its truth value. \end{explanation}
 
 \end{document}
