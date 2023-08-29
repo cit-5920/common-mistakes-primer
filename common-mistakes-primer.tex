@@ -4,38 +4,132 @@
 \usepackage{amssymb}
 \usepackage{geometry}
 \usepackage{xcolor}
+\geometry{a4paper}
 
-\title{Sample LaTeX Document}
-\author{Your Name}
-\date{\today}
+\title{Common Mistakes Primer}
+\author{Jérémie Lumbroso}
+\date{August 28, 2023}
 
 \begin{document}
-
 \maketitle
 
-\section{Introduction}
-This is a sample LaTeX document with the given preamble.
+\section*{Implicit Multiplication}
+When two numbers or variables are placed side by side, they are being multiplied.
+\begin{align*}
+    \text{Correct: } & 4x = 4 \times x \\
+    \text{Clarification: } & 4x \text{ does NOT mean } 4 + x.
+\end{align*}
 
-\section{Mathematics}
-Here are some mathematical symbols and equations using the packages you've included:
+\section*{Powers and Exponents}
+When a number or variable is raised to a power, it means that the base is multiplied by itself the number of times indicated by the exponent.
+\begin{align*}
+    \text{Correct: } & x \times x \times x = x^3 \\
+    \text{Clarification: } & x \times x \times x \text{ does NOT equal } 3x.
+\end{align*}
 
-\begin{enumerate}
-    \item Set of natural numbers: $\mathbb{N}$
-    \item Set of integers: $\mathbb{Z}$
-    \item A quadratic equation: $ax^2 + bx + c = 0$
-    \item A matrix:
-    \[
-    \begin{bmatrix}
-    a & b \\
-    c & d \\
-    \end{bmatrix}
-    \]
-\end{enumerate}
+\section*{Order of Operations (PEMDAS/BODMAS)}
+Follow the order: Parentheses/Brackets, Exponents/Orders, Multiplication and Division (from left to right), and Addition and Subtraction (from left to right).
+\begin{align*}
+    \text{Correct: } & 4 + 3 \times 2 = 10 \\
+    \text{Clarification: } & 4 + 3 \times 2 \text{ does NOT equal } 14.
+\end{align*}
 
-\section{Colored Text}
-Here's some text in \textcolor{red}{red}, \textcolor{blue}{blue}, and \textcolor{green}{green}.
+\section*{Division}
+Division can be represented in multiple ways.
+\begin{align*}
+    \text{Correct: } & \frac{a}{b}, a \div b, \text{ or } a/b \\
+    \text{Clarification: } & a|b \text{ does NOT mean } a \text{ divided by } b.
+\end{align*}
 
-\section{Conclusion}
-This document demonstrates some basic features provided by the packages in the preamble.
+\section*{Equality}
+The equals sign (=) means that the two sides of the equation are the same in value.
+\begin{align*}
+    \text{Correct: } & \text{If } a = b, \text{ then } a \text{ can replace } b \text{ in any equation.} \\
+    \text{Clarification: } & a = b \text{ does NOT mean } a \text{ is similar to } b \text{ without being the same.}
+\end{align*}
+
+\section*{Dot for Multiplication}
+Sometimes a dot (⋅) is used to represent multiplication to avoid confusion.
+\begin{align*}
+    \text{Correct: } & a \times b = a \cdot b \\
+    \text{Clarification: } & a \cdot b \text{ does NOT mean } a \text{ point } b.
+\end{align*}
+
+\section*{Variables}
+Variables like \(x, y, z\) represent unknown values and can take on any value.
+\begin{align*}
+    \text{Correct: } & \text{In the equation } x + 2 = 5, x = 3 \\
+    \text{Clarification: } & x \text{ does NOT always represent an unknown value, even in contexts where its value has been defined.}
+\end{align*}
+
+\section*{Coefficient}
+The number in front of a variable is called its coefficient.
+\begin{align*}
+    \text{Correct: } & \text{In } 7y, 7 \text{ is the coefficient of } y. \\
+    \text{Clarification: } & \text{In } 7y, y \text{ is NOT the coefficient.}
+\end{align*}
+
+\section*{Square Roots}
+The square root symbol (\(\sqrt{} \)) indicates the number which, when multiplied by itself, gives the number under the root.
+\begin{align*}
+    \text{Correct: } & \sqrt{9} = 3 \text{ because } 3 \times 3 = 9 \\
+    \text{Clarification: } & \sqrt{a + b} \text{ does NOT mean } \sqrt{a} + \sqrt{b}.
+\end{align*}
+
+\section*{Terms and Factors}
+Terms are separated by addition or subtraction, while factors are quantities multiplied together.
+\begin{align*}
+    \text{Correct: } & \text{In } 3x + 4y, 3x \text{ and } 4y \text{ are terms. In } 3x, 3 \text{ and } x \text{ are factors.} \\
+    \text{Clarification: } & \text{In } 3x + 4y, 3, x, 4, \text{ and } y \text{ are NOT all terms.}
+\end{align*}
+
+\section*{Quantifiers}
+\textbf{Correct}: ``For all \(x\), there exists a \(y\) such that \(P(x,y)\)'' means that for every value of \(x\), we can find a corresponding \(y\) that satisfies \(P\).
+
+\textbf{Correcting a Misconception}: ``For all \(x\), there exists a \(y\) such that \(P(x,y)\)'' is NOT the same as ``There exists a \(y\) such that for all \(x\), \(P(x,y)''.
+
+\textit{Explanation}: The order of quantifiers matters. The first statement guarantees a possibly different \(y\) for each \(x\), while the second suggests a single \(y\) works for all \(x\).
+
+\section*{Mathematical Induction}
+\textbf{Correct}: When using mathematical induction, one must first prove the base case.
+
+\textbf{Correcting a Misconception}: It's NOT enough to prove the inductive step without verifying the base case.
+
+\textit{Explanation}: The base case serves as the foundation upon which the inductive step builds.
+
+\section*{Sets and Their Equality}
+\textbf{Correct}: If \(A \subseteq B\) and \(B \subseteq A\), then \(A = B\).
+
+\textbf{Correcting a Misconception}: If \(A \subseteq B\) and \(B \subseteq A\), it does NOT mean that \(A\) and \(B\) are different sets containing the same elements.
+
+\textit{Explanation}: When two sets are subsets of each other, they are, in fact, the same set.
+
+\section*{Logical Implications}
+\textbf{Correct}: The contrapositive of ``If \(P\) then \(Q\)'' is ``If not \(Q\) then not \(P\)'' and is logically equivalent to the original statement.
+
+\textbf{Correcting a Misconception}: The converse of ``If \(P\) then \(Q\)'' is NOT always true if ``If \(P\) then \(Q\)'' is true.
+
+\textit{Explanation}: The converse reverses the direction of the implication, which doesn't guarantee its truth.
+
+\section*{Functions}
+\textbf{Correct}: Not all functions have inverse functions. For a function to have an inverse, it must be bijective.
+
+\textbf{Correcting a Misconception}: If \(f: A \rightarrow B\) is a function, there does NOT necessarily exist a function \(g: B \rightarrow A\) such that \(g(f(x)) = x\) for all \(x\) in \(A\).
+
+\textit{Explanation}: Only bijective functions have inverses that can map back from the codomain to the domain.
+
+\section*{Relations}
+\textbf{Correct}: A relation can be reflexive, symmetric, or transitive independently of the other properties.
+
+\textbf{Correcting a Misconception}: If a relation is reflexive and symmetric, it is NOT necessarily transitive.
+
+\textit{Explanation}: Each property of a relation is defined independently, and having two doesn't guarantee the third.
+
+\section*{Conditional Statements}
+\textbf{Correct}: The converse of ``If \(P\) then \(Q\)'' is ``If \(Q\) then \(P\)'', and it might not have the same truth value as the original statement.
+
+\textbf{Correcting a Misconception}: If ``If \(P\) then \(Q\)'' is true, ``If \(Q\) then \(P\)'' is NOT necessarily true.
+
+\textit{Explanation}: The direction of the implication is crucial, and reversing it can change its truth value.
 
 \end{document}
